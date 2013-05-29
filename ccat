@@ -10,4 +10,4 @@ else
 	echo "or head code.c|$0"
 exit 1
 fi
-pygmentize -f terminal -g $file
+pygmentize -f terminal -g $file | perl -lne 'print $., " ", $_'
