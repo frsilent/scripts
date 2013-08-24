@@ -1,6 +1,7 @@
 #!/bin/bash
 #Adds syntax highlighting to a file and prints to stdout
 #Requires pygments // http://pygments.org/
+#Add to /usr/bin for easy usage
 if [ ! -t 0 ]; then
 	file=/dev/stdin
 elif [ -f $1 ]; then
